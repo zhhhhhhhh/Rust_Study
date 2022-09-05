@@ -5,9 +5,9 @@ use std::cmp::Ordering;
 fn main() {
     println!("猜测一个数");
 
-    let secNum = rand::thread_rng().gen_range(1,101);
+    let sec_num = rand::thread_rng().gen_range(1,101);
 
-    print!("{}",secNum);
+    print!("{}",sec_num);
 
     let mut guess = String::new();
 
@@ -17,7 +17,7 @@ fn main() {
 
     print!("the num is {}",guess);
 
-    match guess.cmp(&secNum) {
+    match guess.cmp(&sec_num) {
         Ordering::Less => println!("太小了"),
         Ordering::Greater => println!("太大了"),
         Ordering::Equal => println!("等于"),
