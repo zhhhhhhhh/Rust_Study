@@ -18,7 +18,7 @@ fn main() {
                                                                             // 无法处理的异常直接崩溃
         let guess:u32 = match guess.trim().parse(){//parse会返回ok(类型)和Err()
             Ok(num) => num,
-            Err()   => continue,
+            Err(_)   => continue,//"_"下划线，通配符，表示不关心错误信息
         };
     
         print!("the num is {}",guess);
