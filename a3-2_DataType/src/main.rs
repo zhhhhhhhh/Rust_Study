@@ -6,6 +6,13 @@ fn main() {
     //debug下编译，如果溢出会panic --release下，会值翻转，（u8)256 = 0; (u8)257 = 1;
 
     //浮点，f32,f64，默认f64
+
+    //tuple
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
+
     let abc = 3.12;
     let abc:f32 = 3.14;
     //其他都差不多
