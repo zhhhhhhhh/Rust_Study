@@ -8,6 +8,8 @@ fn main() {
     //浮点，f32,f64，默认f64
 
     //tuple
+    //let tuple_name:(data_type1,data_type2,data_type3) = (value1,value2,value3);
+    //let tuple_name = (value1,value2,value3);
     let tup: (i32, f64, u8) = (500, 6.4, 1);
     let five_hundred = tup.0;
     let six_point_four = tup.1;
